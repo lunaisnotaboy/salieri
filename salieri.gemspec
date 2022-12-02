@@ -30,4 +30,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
   spec.extensions = ['ext/salieri/extconf.rb']
   spec.metadata['rubygems_mfa_required'] = 'true'
+
+  spec.add_runtime_dependency 'gosu', '~> 1.4', '>= 1.4.3'
 end

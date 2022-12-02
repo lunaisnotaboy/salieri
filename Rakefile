@@ -11,6 +11,7 @@ RuboCop::RakeTask.new
 
 require 'rake/extensiontask'
 
+desc 'Compile the native C extensions for Salieri'
 task build: :compile
 
 Rake::ExtensionTask.new('salieri') do |ext|

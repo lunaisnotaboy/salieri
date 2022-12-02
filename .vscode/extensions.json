@@ -4,6 +4,7 @@
     "editorconfig.editorconfig",
     "rebornix.ruby",
     "soutaro.rbs-syntax",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "wingrunr21.vscode-ruby"
   ]
 }
