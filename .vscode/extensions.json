@@ -2,6 +2,7 @@
   "recommendations": [
     "castwide.solargraph",
     "editorconfig.editorconfig",
+    "ms-vscode.cpptools-extension-pack",
     "rebornix.ruby",
     "soutaro.rbs-syntax",
     "vscode-icons-team.vscode-icons",

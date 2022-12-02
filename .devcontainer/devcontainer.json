@@ -3,13 +3,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		    "castwide.solargraph",
-		    "editorconfig.editorconfig",
-		    "rebornix.ruby",
-		    "soutaro.rbs-syntax",
-		    "vscode-icons-team.vscode-icons",
-		    "wingrunr21.vscode-ruby"
-	    ]
+        "castwide.solargraph",
+        "editorconfig.editorconfig",
+        "ms-vscode.cpptools-extension-pack",
+        "rebornix.ruby",
+        "soutaro.rbs-syntax",
+        "vscode-icons-team.vscode-icons",
+        "wingrunr21.vscode-ruby"
+      ]
     }
   },
   "features": {
