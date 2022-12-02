@@ -1,13 +1,10 @@
-name: Ruby
-
+name: Test
 on:
   push:
     branches:
       - develop
       - stable
-
   pull_request:
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,13 +13,17 @@ jobs:
       matrix:
         ruby:
           - '3.0.4'
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby }}
-        bundler-cache: true
-    - name: Run the default task
-      run: bundle exec rake
+      - uses: actions/checkout@v3
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          export DEBIAN_FRONTEND=noninteractive
+          sudo apt-get install -y build-essential libsdl2-dev libsdl2-gfx-dev libsdl2-image-dev libsdl2-ttf-dev libfontconfig-dev
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+          bundler-cache: true
+      - name: Run RSpec and Rubocop
+        run: bundle exec rake
